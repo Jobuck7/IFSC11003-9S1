@@ -1,0 +1,158 @@
+html_doc = """<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Head section contains metadata about the document --> 
+   <meta charset="UTF-8" /> <!-- Character Encoding -->
+   <title>Prototype HTML Document</title> <!-- Page title shown in browser tab -->
+   <meta name="description" content="Prototype HTML document with all elements" /> <!-- Page description -->
+   <meta name="author" content="Jordan Buckner" /> <!-- Author of the page -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive view -->
+</head>
+
+<body>
+
+<div id="page-wrapper">
+   
+<main id="top">
+
+    <header>
+        <h1>Mosaic Templars Cultural Center</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Go to the Home Page">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Mosaic_Templars_Cultural_Center" title="Learn about Mosaic Templars Cultural Center">About</a></li>
+            <li><a href="https://ualr.edu" target="_blank" title="Visit UALR Website">UALR</a></li>
+            <li><a href="mailto:jbuckner@ualr.edu" title="Send me an email">Contact</a></li>   
+        </ul>
+    </nav>
+
+    <section id="content">
+
+        <h2>About the Center</h2>
+        <h3>Educational Mission</h3>
+        <h4>Community Engagement</h4>
+        <h5>Historical Preservation</h5>
+
+        <p>The Mosaic Templars Cultural Center is dedicated to preserving <strong>African American history</strong> and promoting <em>cultural education</em>.</p>
+
+        <!-- Lists -->
+        <h3>Steps to Plan a Visit</h3> 
+        <ol>
+            <li>Check museum hours of operation</li>
+            <li>Review current exhibits online.</li>
+            <li>Purchase tickets or confirm admission policies.</li>
+            <li>Plan transportation to the museum.</li>
+        </ol>
+
+        <h3>Key Features</h3>
+        <ul>
+            <li>Permanent Exhibit</li>
+            <li>Educational Programs</li>
+            <li>Community Events</li>
+            <li>Arkansas African American History Archives</li>
+        </ul>
+
+        <h3>Key Terms</h3>
+        <dl>
+            <dt>Mosaic Templars Cultural Center</dt>
+            <dd>A museum in Little Rock dedicated to preserving African American history and culture in Arkansas</dd>
+
+            <dt>Exhibit</dt>
+            <dd>A curated display of historical artifacts, photographs, and documents.</dd>
+
+            <dt>Fraternal Organizations</dt>
+            <dd>A formal society formed for mutual aid, fellowship, and community support.</dd>
+
+            <dt>Preservation</dt>
+            <dd>The act of protecting and maintaining historical materials for future generations.</dd>
+        </dl>
+
+        <!-- Quotes -->
+        <h3>Quotes</h3>
+        <p>As stated on Wikipedia, <q>The Mosaic Templars Cultural Center preserves African American history in Arkansas.</q></p>
+
+         <blockquote cite="https://en.wikipedia.org/wiki/Mosaic_Templars_Cultural_Center">
+            The Mosaic Templars Cultural Center is dedicated to preserving, interpreting and celebrating African American history, culture and community in Arkansas.
+        </blockquote>
+
+        <!-- Table -->
+        <h3>Community Program Schedule</h3>
+
+        <table>
+            <caption>Monthly Educational Programs</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Program Name</th>
+                    <th scope="col">Audience</th>
+                    <th scope="col">Day</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Location</th>
+                </tr>
+            <thead>
+
+            </tbody>
+                <tr>
+                    <td>Arkansas Black History</td>
+                    <td>Adults</td>
+                    <td>Monday</td>
+                    <td>6:00 PM</td>
+                    <td>Main Hall</td>
+                </tr>
+                <tr>
+                    <td>Children's Story Hour</td>
+                    <td>Kids</td>
+                    <td>Wednesday</td>
+                    <td>4:00 PM</td>
+                    <td>Education Room</td>
+                </tr>
+                <tr>
+                    <td>Genealogy Workshop</td>
+                    <td>Teens & Adults</td>
+                    <td>Friday</td>
+                    <td>5:30 PM</td>
+                    <td>Research Center</td>
+                </tr>
+                <tr>
+                    <td>Community Lecture</td>
+                    <td>Public</td>
+                    <td>Saturday</td>
+                    <td>2:00 PM</td>
+                    <td>Auditorium</td>
+                </tr>
+            <tbody></tbody>
+        </table>
+
+        <!-- Image -->
+         <h3>Image Example</h3>
+        <img src="mosaic-templars.jpg" 
+             alt="Mosaic Templars Cultural Center Building" 
+             width="400" 
+             height="300" />
+
+    </section> <!-- Closing section id="content" -->
+
+    <footer>
+        <h6>
+            &copy; 2026 Jordan Buckner 
+            <a href="mailto:jbuckner@ualr.edu">Email Me</a> 
+            <a href="#top">Back to Top</a> 
+        </h6>
+    </footer>
+
+</main>
+
+</div> <!-- Closing div id="page-wrapper" -->
+</body>
+</html>
+"""
+
+with open("prototype.html", "w", encoding="utf-8") as file:
+    file.write(html_doc)
+
+print("Prototype HTML document created as prototype.html")
+
+git init
+git add .
